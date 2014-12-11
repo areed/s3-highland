@@ -4,16 +4,20 @@
   "description": "highland streams interface to s3",
   "main": "index.js",
   "dependencies": {
-    "highland": "^2.0.0",
-    "highlandx": "0.0.1"
+    "highland": "^2.2.0",
+    "highlandx": "latest",
+    "through2": "^0.6.3",
+    "vinyl": "^0.4.6"
   },
   "devDependencies": {
-    "aws-sdk": "^2.0.23",
+    "aws-sdk": "^2.0.30",
     "chai": "^1.9.2",
-    "mocha": "^2.0.1"
+    "mocha": "^2.0.1",
+    "jsdoc": "3.2.2"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "document": "jsdoc index.js --destination dist/ && go run server.go"
   },
   "repository": {
     "type": "git",
